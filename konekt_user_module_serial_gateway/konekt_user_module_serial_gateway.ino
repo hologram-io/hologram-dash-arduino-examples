@@ -83,7 +83,7 @@ void loop() {
   isHandlingData = false;
 
   while(Serial2.available()) {
-    writeOrFlush(Serial2.available());
+    writeOrFlush(Serial2.read());
   }
 
   while(SerialUSB.available()) {
